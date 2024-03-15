@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+    
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(63, 99, 166);
+    font-family: "Space Grotesk", sans-serif;
+    text-align:center;
+    color:black;
+    margin: 0;
+    padding:0;
+}
+a{
+    color:black;
+    text-decoration: none;
+}
+.header-content{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    align-content: center;
+    gap: 3rem;
+    flex-direction: column;
+}
+.header-content{
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav a{
+    margin-left: 20px;
+}
+nav a:hover{
+    border-bottom: 2px solid rgb(188, 31, 31);
+}
+/*home css*/
+#home{
+    padding: 10px 0;
+}
+.profile-info{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: center;
+}
+.text-info{
+    display: flex;
+    justify-content: space-between;
+}
+.text-info h1{
+    border-bottom: 2px solid black;
+}
+.user-bio{
+    border-bottom: 1px solid gray ;
+}
+.quote-box{
+    padding: 16px;
+    background-color: rgba(105, 105, 42, 0.833);
+    border-radius: 3px;
+}
+/*project CSS*/
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.project{
+    border: 1px solid yellowgreen;
+    border-radius: 500px;
+    padding: 20px;
+}
+.project h3,
+.project p{
+    text-align: left;
+
+}
+.project-languages{
+    display: flex;
+    gap: 8px;
+    font-weight: lighter;
+    font-size: 12px;
+    color:rgba(41, 5, 74, 0.89)
+}
+.more-projects{
+    margin-top: 10px;
+    font-weight: 800;
+    width: 95%;
+    color:blanchedalmond;
+    border: 1px solid rebeccapurple ;
+    border-radius: 35px;
+    padding: 16px;
+
+}
+/*media screen*/
+@media screen and (min-width: 1025px){
+    grid-template-columns: repeat(2, 1fr);
+
+}
+/*footer css*/
+footer{
+    padding: 50px 0 20px;
+}
